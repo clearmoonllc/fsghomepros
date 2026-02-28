@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background - Old Glory Blue -->
+  <rect width="100" height="100" rx="20" fill="#3C3B6E" />
+  
+  <!-- Stylized House Roof - Old Glory Red -->
+  <path d="M 15 50 L 50 15 L 85 50" fill="none" stroke="#B22234" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 25 45 L 25 80 L 75 80 L 75 45" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- FSG Text -->
+  <text x="50" y="65" font-family="'Inter', sans-serif, Arial" font-weight="bold" font-size="28" fill="#FFFFFF" text-anchor="middle">FSG</text>
+</svg>

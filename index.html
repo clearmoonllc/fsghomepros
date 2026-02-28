@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FSG Home Pros - Veteran Owned General Contractor in Spring Hill, FL</title>
-    <meta name="description" content="FSG Home Pros is a premier veteran-owned general contractor in Spring Hill, FL. We specialize in home remodeling, plumbing, electrical, fences, and post-flood damage restoration.">
+    <meta name="description"
+        content="FSG Home Pros is a premier veteran-owned general contractor in Spring Hill, FL. We specialize in home remodeling, plumbing, electrical, fences, and post-flood damage restoration.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Header -->
     <header class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="#home"><h1>FSG<span>HomePros</span></h1></a>
+                <a href="#home">
+                    <h1>FSG<span>HomePros</span></h1>
+                </a>
             </div>
             <nav class="nav-links">
                 <ul>
@@ -51,7 +60,8 @@
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h2 class="animate-fade-in-up">Building Dreams, Restoring Homes</h2>
-            <p class="animate-fade-in-up delay-1">Veteran-Owned General Contracting in Spring Hill, FL. Quality craftsmanship with American pride.</p>
+            <p class="animate-fade-in-up delay-1">Veteran-Owned General Contracting in Spring Hill, FL. Quality
+                craftsmanship with American pride.</p>
             <div class="hero-buttons animate-fade-in-up delay-2">
                 <a href="#services" class="btn btn-primary">Our Services</a>
                 <a href="#contact" class="btn btn-secondary">Get a Quote</a>
@@ -65,9 +75,10 @@
             <div class="section-title text-center">
                 <h2>Our Premium Services</h2>
                 <div class="divider"></div>
-                <p>We handle everything related to your home—except roofs and foundations. From minor plumbing to major post-flood restoration.</p>
+                <p>We handle everything related to your home—except roofs and foundations. From minor plumbing to major
+                    post-flood restoration.</p>
             </div>
-            
+
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-card">
@@ -126,8 +137,13 @@
                 <div class="about-text">
                     <h2>About FSG Home Pros</h2>
                     <div class="divider left"></div>
-                    <p>FSG Home Pros is a veteran-owned and operated general contractor based in the heart of Spring Hill, FL. We bring the same dedication, discipline, and attention to detail from our military service directly to your home projects.</p>
-                    <p>Our team specializes in a wide array of home improvements and restorations. Whether you need a simple plumbing fix, a custom security system, or complete post-flood damage restoration, we have the expertise to get the job done right. We take deep pride in our work and our community.</p>
+                    <p>FSG Home Pros is a veteran-owned and operated general contractor based in the heart of Spring
+                        Hill, FL. We bring the same dedication, discipline, and attention to detail from our military
+                        service directly to your home projects.</p>
+                    <p>Our team specializes in a wide array of home improvements and restorations. Whether you need a
+                        simple plumbing fix, a custom security system, or complete post-flood damage restoration, we
+                        have the expertise to get the job done right. We take deep pride in our work and our community.
+                    </p>
                     <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> Veteran Owned & Operated</li>
                         <li><i class="fas fa-check-circle"></i> Fully Licensed & Insured</li>
@@ -156,7 +172,7 @@
                 <div class="divider"></div>
                 <p>Reach out to us for a free estimate or to discuss your home project needs.</p>
             </div>
-            
+
             <div class="contact-flex">
                 <div class="contact-info">
                     <div class="info-item">
@@ -181,17 +197,18 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/your_form_id_here"
+                        method="POST">
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <select id="service" required>
+                            <select id="service" name="service" required>
                                 <option value="" disabled selected>Select a Service</option>
                                 <option value="remodeling">Home Remodeling</option>
                                 <option value="plumbing-electrical">Plumbing & Electrical</option>
@@ -202,7 +219,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" rows="5" placeholder="Project Details" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Project Details"
+                                required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Send Message</button>
                     </form>
@@ -216,7 +234,8 @@
         <div class="container footer-content">
             <div class="footer-logo">
                 <h2>FSG<span>HomePros</span></h2>
-                <p>Your trusted partner in home improvements and restorations. Bringing military precision to residential contracting.</p>
+                <p>Your trusted partner in home improvements and restorations. Bringing military precision to
+                    residential contracting.</p>
             </div>
             <div class="footer-links">
                 <h3>Quick Links</h3>
@@ -230,21 +249,25 @@
             <div class="footer-social">
                 <h3>Follow Us</h3>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com/fsghomepros" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/fsghomepros" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/fsghomepros" target="_blank" rel="noopener noreferrer"
+                        aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container bottom-flex">
                 <p>&copy; 2026 FSG Home Pros. All rights reserved.</p>
-                <p class="design-credit">design by <a href="https://clearmoon.llc" target="_blank" rel="noopener noreferrer">ClearMoon.LLC</a></p>
+                <p class="design-credit">design by <a href="https://clearmoon.llc" target="_blank"
+                        rel="noopener noreferrer">ClearMoon.LLC</a></p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>

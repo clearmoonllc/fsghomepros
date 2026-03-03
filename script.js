@@ -63,31 +63,55 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form Submission Handling (Basic Prevent Default)
+    // Form Submission Handling (Works with Formspree or Google Apps Script)
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            // In a real scenario, handle form submission via fetch/axios here
+
             const btn = contactForm.querySelector('button[type="submit"]');
             const originalText = btn.textContent;
 
             btn.textContent = 'Sending...';
             btn.disabled = true;
 
-            // Simulate network request
-            setTimeout(() => {
-                btn.textContent = 'Message Sent!';
-                btn.style.backgroundColor = '#2ecc71'; // Green color for success
-                contactForm.reset();
+            // Form data preparation
+            const formData = new FormData(contactForm);
 
-                // Revert button after 3 seconds
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                    btn.style.backgroundColor = ''; // Revert to CSS defined color
-                    btn.disabled = false;
-                }, 3000);
-            }, 1500);
+            // Fetch logic to submit data
+            // To use Google Apps Script instead of Formspree later:
+            // 1. Create a Web App in Apps Script that accepts POST requests.
+            // 2. Change the 'action' attribute in index.html to your Web App URL.
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        btn.textContent = 'Message Sent!';
+                        btn.style.backgroundColor = '#2ecc71'; // Green color for success
+                        contactForm.reset();
+                    } else {
+                        btn.textContent = 'Error Sending!';
+                        btn.style.backgroundColor = '#e74c3c'; // Red for error
+                    }
+                })
+                .catch(error => {
+                    console.error('Submission Error:', error);
+                    btn.textContent = 'Network Error!';
+                    btn.style.backgroundColor = '#e74c3c';
+                })
+                .finally(() => {
+                    // Revert button after 3 seconds
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.style.backgroundColor = ''; // Revert to CSS defined color
+                        btn.disabled = false;
+                    }, 3000);
+                });
         });
     }
 
